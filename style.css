@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #5964b7;
+}
+
+.wrapper{
+    width: 750px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.wrapper h1{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.wrapper form{
+    margin: 35px 30px;
+
+}
+
+form .box-double{
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;    
+    justify-content: space-between;
+} 
+
+.box-double .box-one{
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+form .box-one input,
+form .message textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+}
+
+form .box-one input::placeholder,
+form .message textarea::placeholder{
+    color: #bfbfbf;
+}
+
+form .box-one input:focus,
+form .message textarea:focus{
+    border: 2px solid #5964b7;
+}
+
+.wrapper form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .box-one input:focus ~ i{
+    color:#5964b7;
+}
+
+form .message{
+    position: relative;
+}
+
+
+form .message i{
+    top: 30px;
+    font-size: 20px;
+}
+
+form .message textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 15px 20px 0 48px;
+}
+
+form .button{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button input{
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #5964b7;
+    padding: 13px 25px;
+}
+
+.button span{
+    color:#5964b7;
+    margin-left: 35px;
+    display: none;
+}
+
+@media(max-width: 600px){
+    .wrapper h1{
+        text-align: center;
+    }
+
+    form .box-double{
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .box-double .box-one{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form .button{
+        flex-direction: column;
+    }
+
+    .button input{
+        width: 100%;
+    }  
+
+  
+}
+
