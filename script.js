@@ -14,6 +14,8 @@ form.onsubmit = (event)=>{
             console.log(response);
         }
     }
-        xmlObject.send();
+
+    let formData = new FormData(form); //vytvoření FormData, posílání formData
+    xmlObject.send(formData);
     
 }
