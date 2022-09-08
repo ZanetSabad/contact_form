@@ -22,8 +22,10 @@ body{
 }
 
 .wrapper h1{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
     padding: 20px 30px;
     border-bottom: 1px solid #f8f8f8;
 }
@@ -58,7 +60,8 @@ form .message textarea{
 
 form .box-one input::placeholder,
 form .message textarea::placeholder{
-    color: #fc4404;
+    color: black;
+    font-size: 15px;
 }
 
 form .box-one input:focus,
@@ -85,7 +88,7 @@ form .message textarea{
     max-width: 100%;
     min-height: 120px;
     max-height: 300px;
-    padding: 15px 20px 0 20px;
+    padding: 15px 20px 0 15px;
 }
 
 form .button{
@@ -106,7 +109,7 @@ form .button{
 }
 
 .button span{
-    color:#fc4404;
+    font-size: 20px;
     margin-left: 35px;
     display: none;
 }
